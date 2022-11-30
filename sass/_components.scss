@@ -1,0 +1,37 @@
+@use "sass:color";
+
+$color1: #343434;
+$moderate_violet: hsl(263, 55%, 52%);
+$dark_grayish_blue: hsl(217, 19%, 35%);
+$dark_blackish_blue: hsl(219, 29%, 14%);
+$light_gray: hsl(0, 0%, 81%);
+$light_grayish_blue: hsl(210, 46%, 95%);
+
+img.avatar {
+    width: 3em;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.datosUser {
+    .nameUser {
+        font-size: 1.4em;
+        font-weight: 600;
+        color: $dark_grayish_blue;
+    }
+
+    .userE {
+        font-size: 1.1em;
+        color: color.change($dark_grayish_blue, $alpha: .5);
+    }
+}
+
+.attribution {
+    font-size: .8em;
+    text-align: center;
+
+    a {
+        font-size: 1em;
+        color: hsl(228, 45%, 44%);
+    }
+}
